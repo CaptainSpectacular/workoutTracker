@@ -1,0 +1,9 @@
+<h1> Debug Info </h1>
+
+
+<h3> Current User Info </h3>
+<% current_user.attributes.each do |attr| %>
+
+  <li><%= attr[0] %>: <%= attr[1] %></li>
+
+<% end %>
