@@ -38,6 +38,11 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
 gem 'figaro'
 
+
+# javascript
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+
 group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
