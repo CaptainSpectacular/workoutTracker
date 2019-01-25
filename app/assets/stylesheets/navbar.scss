@@ -1,0 +1,38 @@
+$linkColor: #C6B3DE;
+.navbar {
+  width: 100%;
+  height: 4em;
+  background-color: #222F5F;
+}
+
+.navbar-dropdown {
+  background-color: #000000;
+  height: 100%;
+  width: 17%;
+  float: right;
+}
+
+.navbar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    a {
+      display: block;
+      padding: 0 20px;
+      line-height: 70px;
+      background: #7E79B5;
+      color: $linkColor;
+      text-decoration: none;
+      &:hover {
+        background: #A791C9;
+        color: $linkColor;
+      }
+
+      &:not(:only-child):after {
+        padding-left: 4px;
+        content: ' x ';
+      }
+    }
+  }
+}
