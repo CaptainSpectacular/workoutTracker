@@ -1,6 +1,17 @@
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
 <nav class="navbar">
+  <%= form_tag('/search', method: 'get', class: 'navbar-search') do %>
+    <%= text_field_tag(:q, nil, placeholder: 'Search...', class: 'search-field') %>
+    <%= button_tag '', type: 'submit', class: 'fas fa-search fa-2x' %>
+  <% end %>
   <div class="navbar-dropdown">
-    <div class="dropdown-icon"></div>
+    <div class="dropdown-icon">
+      <i class="fas fa-bars fa-4x"></i>
+    </div>
+
     <ul class=" navbar-links">
       <li><%= link_to 'Home', root_path %></li>  
       <li><%= link_to 'Progress', root_path %></li>  
