@@ -1,15 +1,34 @@
 $linkColor: #C6B3DE;
+
+.dropdown-icon {
+  text-align: center;
+}
+
+input:focus {
+  background-color: white;
+}
+
 .navbar {
-  width: 100%;
-  height: 4em;
   background-color: #222F5F;
+  height: 4em;
+  width: 100%;
 }
 
 .navbar-dropdown {
-  background-color: #253566;
-  height: 100%;
-  width: 17%;
+  background-color: #253564;
   float: right;
+  height: 100%;
+  width: 10%;
+
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+
+  &:hover {
+    background: #A791C9;
+  }
 }
 
 .navbar-links {
@@ -18,12 +37,18 @@ $linkColor: #C6B3DE;
   padding: 0;
   li {
     a {
-      display: block;
-      padding: 0 20px;
-      line-height: 70px;
       background: #253566;
       color: $linkColor;
+      display: block;
+      line-height: 70px;
+      padding: 0 20px;
       text-decoration: none;
+      transition: .5s;
+      -o-transition: .5s;
+      -ms-transition: .5s;
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+
       &:hover {
         background: #A791C9;
         color: $linkColor;
@@ -36,3 +61,21 @@ $linkColor: #C6B3DE;
     }
   }
 }
+
+.navbar-search {
+  display: inline-block;
+  height: 1em;
+  text-align: center;
+  width: 90%;
+}
+
+.search-field {
+  background-color: #2F3437;
+  border: 1px solid #2F3437;
+  border-radius: 25px;
+  font-size: 2em;
+  text-align: center;
+  margin-top: .25em;
+  width: 30%;
+}
+
